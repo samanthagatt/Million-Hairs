@@ -11,6 +11,7 @@ do {
     
     try App.configure(&config, &env, &services)
     
+    // Vapor class responsible for listening for and responding to user requests
     let app = try Application(
         config: config,
         environment: env,
