@@ -2,5 +2,6 @@
     <body>
         <h1>Get in touch</h1>
         <p>Contact us at 555-1234</p>
+        #embed("footer")
     </body>
 </html>
