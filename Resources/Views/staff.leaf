@@ -16,9 +16,17 @@
     }
 } else {
     #set("title") {Staff}
-    #set("h1") {Unkown staff member}
-    #set("body") {
-        <p>We didn't recognize that person.</p>
+    #if(bio) {
+        #set("h1") {Our Staff}
+        #set("body") {
+            #get(staff)
+        }
+    } else {
+        #set("h1") {Unkown staff member}
+        #set("body") {
+            <p>We didn't recognize that person.</p>
+            #get(staff)
+        }
     }
 }
 

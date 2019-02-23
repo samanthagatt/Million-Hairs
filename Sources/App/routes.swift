@@ -16,6 +16,11 @@ public func routes(_ router: Router) throws {
         return try req.view().render("contact", context)
     }
     
+    router.get("staff") { req -> Future<View> in
+        let context = StaffView(name: nil, bio: "no input")
+        return try req.view().render("staff", context)
+    }
+    
     router.get("staff", String.parameter) { req -> Future<View> in
         let name = try req.parameters.next(String.self)
         
