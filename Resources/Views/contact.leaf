@@ -1,7 +1,7 @@
-<html>
-    <body>
-        <h1>Get in touch</h1>
-        <p>Contact us at 555-1234</p>
-        #embed("footer")
-    </body>
-</html>
+#set("title") {Contact}
+#set("h1") {Get in touch}
+#set("body") {
+    <p>Contact us at 555-1234</p>
+}
+
+#embed("master")

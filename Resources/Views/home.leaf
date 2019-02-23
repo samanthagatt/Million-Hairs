@@ -1,6 +1,7 @@
-<html>
-    <body>
-        <h1>Welcome to Million Hairs!</h1>
-        #embed("footer")
-    </body>
-</html>
+#set("title") {Welcome}
+#set("h1") {Welcome to Million Hairs}
+#set("body") {
+    <p>Million Hairs is a leading veterinary surgery - we just love animals!</p>
+}
+
+#embed("master")

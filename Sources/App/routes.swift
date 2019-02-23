@@ -37,7 +37,7 @@ public func routes(_ router: Router) throws {
 struct StaffView: Codable {
     var name: String?
     var bio: String?
-    let allBios = StaffView.bios.keys.sorted()
+    let allNames = StaffView.bios.keys.sorted()
     
     static let bios = [
         "kirk": "My name is James Kirk and I love snakes",
