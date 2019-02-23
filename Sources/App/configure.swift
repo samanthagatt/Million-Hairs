@@ -18,4 +18,8 @@ public func configure(
     try services.register(LeafProvider())
     // When rendering templates use Leaf
     config.prefer(LeafRenderer.self, for: ViewRenderer.self)
+    
+    var middleware = MiddlewareConfig.default()
+    middleware.use(FileMiddleware.self)
+    services.register(middleware)
 }
